@@ -1,0 +1,444 @@
+/* =========================
+   General Page Styling
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #eef2f7;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+body > h1:first-of-type {
+    margin: 0;
+    padding: 40px 20px 5px;
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+}
+
+body > h2:first-of-type {
+    margin: 0;
+    padding: 5px 20px 25px;
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+body > nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    padding: 0 20px 30px;
+
+    background-color: #172554;
+}
+
+body > nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+body > nav a:hover {
+    background-color: #2563eb;
+}
+
+
+/* =========================
+   Sections
+========================= */
+
+section {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+
+    color: #1d4ed8;
+
+    border-bottom: 3px solid #dbeafe;
+
+    padding-bottom: 8px;
+}
+
+
+/* =========================
+   Introduction
+========================= */
+
+#introduction p {
+    text-align: justify;
+    font-size: 17px;
+}
+
+#introduction strong {
+    color: #1d4ed8;
+}
+
+#introduction em {
+    color: #7c3aed;
+}
+
+
+/* =========================
+   Image
+========================= */
+
+figure {
+    text-align: center;
+    margin: 30px auto;
+}
+
+figure img {
+    display: block;
+
+    width: 300px;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: auto;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.20);
+}
+
+figcaption {
+    margin-top: 12px;
+
+    color: #64748b;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   Experience
+========================= */
+
+#experience li {
+    margin: 12px 0;
+
+    padding: 12px 15px;
+
+    background-color: #f8fafc;
+
+    border-left: 5px solid #2563eb;
+
+    border-radius: 0 10px 10px 0;
+}
+
+/* Light */
+#experience li:nth-child(odd) {
+    font-weight: 300;
+}
+
+/* Bold */
+#experience li:nth-child(even) {
+    font-weight: 700;
+}
+
+
+/* =========================
+   Skills Table
+========================= */
+
+#skills table {
+    width: 100%;
+    max-width: 750px;
+
+    margin: 20px auto;
+
+    border-collapse: collapse;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+#skills th {
+    background-color: #1d4ed8;
+
+    color: white;
+
+    padding: 14px;
+
+    text-align: left;
+}
+
+#skills td {
+    padding: 13px;
+
+    border-bottom: 1px solid #dbeafe;
+}
+
+#skills tr:nth-child(even) {
+    background-color: #eff6ff;
+}
+
+#skills tr:hover {
+    background-color: #dbeafe;
+}
+
+
+/* =========================
+   Projects
+========================= */
+
+#projects ul {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+#projects li {
+    padding: 20px;
+
+    background: linear-gradient(
+        145deg,
+        #f8fafc,
+        #e0ecff
+    );
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 14px;
+
+    color: #1e3a8a;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 5px 14px rgba(0, 0, 0, 0.07);
+}
+
+#projects li:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 22px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================
+   YouTube Video
+========================= */
+
+#video iframe {
+    display: block;
+
+    width: min(800px, 100%);
+
+    aspect-ratio: 16 / 9;
+
+    height: auto;
+
+    margin: 25px auto;
+
+    border: none;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   Contact Form
+========================= */
+
+#contact form {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+form button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1e3a8a;
+}
+
+
+/* =========================
+   Back To Top
+========================= */
+
+.back-to-top {
+    display: block;
+
+    width: fit-content;
+
+    margin: 25px auto;
+
+    padding: 9px 16px;
+
+    background-color: #172554;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+.back-to-top:hover {
+    background-color: #2563eb;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #172554;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 700px) {
+
+    body > h1:first-of-type {
+        font-size: 32px;
+    }
+
+    body > nav {
+        gap: 5px;
+    }
+
+    body > nav a {
+        font-size: 14px;
+    }
+
+    section {
+        width: 94%;
+        padding: 20px;
+    }
+
+    #projects ul {
+        grid-template-columns: 1fr;
+    }
+
+    #skills table {
+        font-size: 14px;
+    }
+
+    #skills th,
+    #skills td {
+        padding: 10px;
+    }
+}
